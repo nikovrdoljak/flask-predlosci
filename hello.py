@@ -13,3 +13,8 @@ def user(name):
 def nouser():
     return render_template('user.html')
 
+@app.route('/comments/')
+def comments():
+    comments = ['Odlično!', 'HŽV', 'Ništa ne razumijem', 'Nije loše za prvi put...']
+    return render_template('user.html', comments = comments)
+
