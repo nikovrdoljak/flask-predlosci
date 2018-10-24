@@ -16,5 +16,5 @@ def nouser():
 @app.route('/comments/')
 def comments():
     comments = ['Odlično!', 'HŽV', 'Ništa ne razumijem', 'Nije loše za prvi put...']
-    return render_template('user.html', comments = comments)
+    return render_template('comments.html', comments = comments)
 
